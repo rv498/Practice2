@@ -1,0 +1,87 @@
+<manifest alg="2" build="2015.2.1.352" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="videos.firmAndElegant.com" resolutions="1x" timestamp="1476712859865">
+  <folder name="css">
+    <file name="site_global.css" crc="3916556066"/>
+    <file name="index.css" crc="136581790" ref="index"/>
+    <file name="zinnmindfulness.css" crc="299140830" ref="zinnmindfulness"/>
+    <file name="meditationforbeginners.css" crc="447196504" ref="meditationforbeginners"/>
+    <file name="mindfulnessandhowthebrainworks.css" crc="3985604451" ref="mindfulnessandhowthebrainworks"/>
+    <file name="nakai.css" crc="3912436062" ref="nakai"/>
+    <file name="sittingmeditation.css" crc="187408327" ref="sittingmeditation"/>
+    <file name="howmindfulnessempowersus.css" crc="163261032" ref="howmindfulnessempowersus"/>
+    <file name="bodyscan.css" crc="88037764" ref="bodyscan"/>
+    <file name="breathingspace.css" crc="143475318" ref="breathingspace"/>
+    <file name="whymindfulnessissuperpower.css" crc="270117573" ref="whymindfulnessissuperpower"/>
+    <file name="worksheet.css" crc="376106956" ref="worksheet"/>
+    <file name="allittakesistenmindfulminutes.css" crc="3791328269" ref="allittakesistenmindfulminutes"/>
+    <file name="mindfulnessintroduction.css" crc="401378451" ref="mindfulnessintroduction"/>
+    <file name="indianflutemusic.css" crc="30664901" ref="indianflutemusic"/>
+  </folder>
+  <folder name="assets">
+    <file name="seeder.png" crc="3887851316" seo="true" mt="1476658201000"/>
+    <file name="mindfulness-with-jon-kabat-zinn.mp4" crc="55918887" seo="true" mt="1476664135000"/>
+    <file name="jon-kabat-zinn--body-scan.mp4" crc="4177305547" seo="true" mt="1476670756000"/>
+    <file name="mindfulness---an-introduction-with-jon-kabat-zinn.mp4" crc="332342184" seo="true" mt="1476670970000"/>
+    <file name="how-mindfulness-empowers-us_-an-animation-narrated-by-sharon-salzberg.mp4" crc="3916678256" seo="true" mt="1476674635000"/>
+    <file name="meditation-for-beginners---featuring-dan-harris-and-sharon-salzberg.mp4" crc="143975008" seo="true" mt="1476674793000"/>
+    <file name="why-mindfulness-is-a-superpower_-an-animation.mp4" crc="528632042" seo="true" mt="1476675021000"/>
+    <file name="mind-the-bump---mindfulness-and-how-the-brain-works.mp4" crc="3943724815" seo="true" mt="1476675282000"/>
+    <file name="all-it-takes-is-10-mindful-minutes-_-andy-puddicombe.mp4" crc="4186364331" seo="true" mt="1476675497000"/>
+    <file name="jon-kabat-zinn,-phd-â€“-guided-mindfulness-meditation-series-1-â€“-(excerpt-from-track-2).mp4" crc="4239703111" seo="true" mt="1476675728000"/>
+    <file name="the-breathing-space-by-jon-kabat-zinn_-a-3-minute-exercise.mp4" crc="3822669555" seo="true" mt="1476675901000"/>
+    <file name="carlos-nakai_-earth-spirit.mp4" crc="206175355" seo="true" mt="1476676237000"/>
+    <file name="indian-background-flute-music_-instrumental-meditation-music-_-yoga-music-_-spa-music-for-relaxation.mp4" crc="352867638" seo="true" mt="1476676492000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="169078940" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="museutils.js" crc="3851988764" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="whatinput.js" crc="86476730" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="museconfig.js" crc="169177150" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="pie.js" crc="3831537696" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="271560940" ref="index"/>
+    <file name="jquery.watch.js" crc="3842844514" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="require.js" crc="4108833657" ref="index:zinnmindfulness:bodyscan:mindfulnessintroduction:howmindfulnessempowersus:meditationforbeginners:whymindfulnessissuperpower:mindfulnessandhowthebrainworks:allittakesistenmindfulminutes:sittingmeditation:breathingspace:nakai:indianflutemusic:worksheet"/>
+    <file name="webpro.js" crc="4067903014" ref="worksheet"/>
+    <file name="musewpslideshow.js" crc="4265225696" ref="worksheet"/>
+    <file name="jquery.museoverlay.js" crc="4075157096" ref="worksheet"/>
+    <file name="touchswipe.js" crc="474750357" ref="worksheet"/>
+  </folder>
+  <folder name="images">
+    <file name="asset 3xxxhdpi.jpg" crc="52037488" ref="index"/>
+    <file name="pg2.png" crc="165665359" seo="true" ref="worksheet"/>
+    <file name="blank.gif" crc="4208392903" ref="worksheet"/>
+    <file name="pg1.png" crc="532980309" seo="true" ref="worksheet"/>
+    <file name="pg3.png" crc="335638955" seo="true" ref="worksheet"/>
+    <file name="pg4.png" crc="501302187" seo="true" ref="worksheet"/>
+    <file name="pg5.png" crc="4108005765" seo="true" ref="worksheet"/>
+    <file name="pg6.png" crc="4175328487" seo="true" ref="worksheet"/>
+    <file name="pg7.png" crc="3936322796" seo="true" ref="worksheet"/>
+    <file name="pg8.png" crc="519907057" seo="true" ref="worksheet"/>
+    <file name="pg9.png" crc="3974151322" seo="true" ref="worksheet"/>
+    <file name="pg10.png" crc="4127432913" seo="true" ref="worksheet"/>
+    <file name="pg2-crop-u844.png" crc="3891172742" ref="worksheet"/>
+    <file name="pg1-crop-u947.png" crc="4038730434" ref="worksheet"/>
+    <file name="pg3-crop-u1025.png" crc="50111220" ref="worksheet"/>
+    <file name="pg4-crop-u1045.png" crc="197938526" ref="worksheet"/>
+    <file name="pg5-crop-u1065.png" crc="4092869272" ref="worksheet"/>
+    <file name="pg6-crop-u1085.png" crc="4160468294" ref="worksheet"/>
+    <file name="pg7-crop-u1105.png" crc="355386533" ref="worksheet"/>
+    <file name="pg8-crop-u1125.png" crc="3781146162" ref="worksheet"/>
+    <file name="pg9-crop-u1145.png" crc="292896448" ref="worksheet"/>
+    <file name="pg10-crop-u1165.png" crc="317753768" ref="worksheet"/>
+    <file name="loading.gif" crc="3815509949" ref="worksheet"/>
+  </folder>
+  <file name="index.html" crc="3827712642" seo="true" mt="1476677530299" redirect="true"/>
+  <file name="zinnmindfulness.html" crc="89701646" seo="true" mt="1476666226732" redirect="true"/>
+  <file name="bodyscan.html" crc="369715674" seo="true" mt="1476671160832" redirect="true"/>
+  <file name="mindfulnessintroduction.html" crc="3844696473" seo="true" mt="1476671331422" redirect="true"/>
+  <file name="howmindfulnessempowersus.html" crc="416929004" seo="true" mt="1476674675482" redirect="true"/>
+  <file name="meditationforbeginners.html" crc="3979180168" seo="true" mt="1476674892760" redirect="true"/>
+  <file name="whymindfulnessissuperpower.html" crc="4178911158" seo="true" mt="1476675182171" redirect="true"/>
+  <file name="mindfulnessandhowthebrainworks.html" crc="303002574" seo="true" mt="1476675353087" redirect="true"/>
+  <file name="allittakesistenmindfulminutes.html" crc="11737712" seo="true" mt="1476675594039" redirect="true"/>
+  <file name="sittingmeditation.html" crc="16787911" seo="true" mt="1476675803922" redirect="true"/>
+  <file name="breathingspace.html" crc="11524473" seo="true" mt="1476675969290" redirect="true"/>
+  <file name="nakai.html" crc="298442133" seo="true" mt="1476676288439" redirect="true"/>
+  <file name="indianflutemusic.html" crc="3895017075" seo="true" mt="1476676569900" redirect="true"/>
+  <file name="worksheet.html" crc="4210206571" seo="true" mt="1476708778960" redirect="true"/>
+</manifest>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2015.2.1.352"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>Home</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3916556066"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=136581790" id="pagesheet"/>
+    <!--HTML Widget code-->
+  
+				<!-- 
+					Square Menu Styling
+				 -->
+				<style>
+					
+					body.sm-activate {
+					  overflow: hidden;
+					}
+					.sm-menu {
+					  position: fixed;
+					  visibility: hidden;
+					  opacity: 0;
+					  width: 1024px;
+					  height: 600px;
+					  left: 50%;
+					  top: 150%;
+					  margin-left: -512px;
+					  margin-top: -300px;
+					  z-index: 1001;
+					}
+					.sm-menu.animated {
+					  -webkit-transition: all 0.5s ease-in-out;
+					  -moz-transition: all 0.5s ease-in-out;
+					  -o-transition: all 0.5s ease-in-out;
+					  transition: all 0.5s ease-in-out;
+					}
+					.sm-menu.sm-bottom-left {
+					  -webkit-transform: rotate(-135deg);
+					  -moz-transform: rotate(-135deg);
+					  -ms-transform: rotate(-135deg);
+					  -o-transform: rotate(-135deg);
+					  transform: rotate(-135deg);
+					  top: 150%;
+					  left: -150%;
+					}
+					.sm-menu.sm-bottom-right {
+					  -webkit-transform: rotate(135deg);
+					  -moz-transform: rotate(135deg);
+					  -ms-transform: rotate(135deg);
+					  -o-transform: rotate(135deg);
+					  transform: rotate(135deg);
+					  top: 150%;
+					  left: 150%;
+					}
+					.sm-menu.sm-top {
+					  top: -150%;
+					}
+					.sm-menu.sm-top-left {
+					  -webkit-transform: rotate(-45deg);
+					  -moz-transform: rotate(-45deg);
+					  -ms-transform: rotate(-45deg);
+					  -o-transform: rotate(-45deg);
+					  transform: rotate(-45deg);
+					  top: -150%;
+					  left: -150%;
+					}
+					.sm-menu.sm-top-right {
+					  -webkit-transform: rotate(45deg);
+					  -moz-transform: rotate(45deg);
+					  -ms-transform: rotate(45deg);
+					  -o-transform: rotate(45deg);
+					  transform: rotate(45deg);
+					  top: -150%;
+					  left: 150%;
+					}
+					.sm-menu.sm-left {
+					  top: 50%;
+					  left: -150%;
+					}
+					.sm-menu.sm-right {
+					  top: 50%;
+					  left: 150%;
+					}
+					.sm-menu.re-rotate {
+					  -webkit-transform: rotate(0);
+					  -moz-transform: rotate(0);
+					  -ms-transform: rotate(0);
+					  -o-transform: rotate(0);
+					  transform: rotate(0);
+					}
+					.sm-menu.ff-hack {
+					  opacity: 1;
+					  visibility: visible;
+					  top: 50%;
+					  left: 50%;
+					}
+
+					.sm-menu .sm-nav {
+					  -webkit-transform: translate3d(50%, 0, 0) scale(0.002, 1);
+					  -moz-transform: translate3d(50%, 0, 0) scale(0.002, 1);
+					  -ms-transform: translate3d(50%, 0, 0) scale(0.002, 1);
+					  -o-transform: translate3d(50%, 0, 0) scale(0.002, 1);
+					  transform: translate3d(50%, 0, 0) scale(0.002, 1);
+					  -webkit-transition: all 0.5s ease-in-out;
+					  -moz-transition: all 0.5s ease-in-out;
+					  -o-transition: all 0.5s ease-in-out;
+					  transition: all 0.5s ease-in-out;
+					  width: 50%;
+					  height: 100%;
+					  position: absolute;
+					  top: 0;
+					  text-align: center;
+					  padding: 30px;
+					  -webkit-box-sizing: border-box;
+						-moz-box-sizing: border-box;
+						box-sizing: border-box;
+					}
+
+					.sm-menu.sm-horizontal .sm-nav {
+					  -webkit-transform: translate3d(25%, 0, 0) scale(0.5, 0.002);
+					  -moz-transform: translate3d(25%, 0, 0) scale(0.5, 0.002);
+					  -ms-transform: translate3d(25%, 0, 0) scale(0.5, 0.002);
+					  -o-transform: translate3d(25%, 0, 0) scale(0.5, 0.002);
+					}
+					.sm-menu.sm-horizontal .sm-nav:nth-child(2) {
+					  -webkit-transform: translate3d(-25%, 0, 0) scaleX(0.5) scaleY(0.002);
+					  -moz-transform: translate3d(-25%, 0, 0) scaleX(0.5) scaleY(0.002);
+					  -ms-transform: translate3d(-25%, 0, 0) scaleX(0.5) scaleY(0.002);
+					  -o-transform: translate3d(-25%, 0, 0) scaleX(0.5) scaleY(0.002);
+					  transform: translate3d(-25%, 0, 0) scaleX(0.5) scaleY(0.002);
+					  right: 0;
+					}
+					.sm-menu .sm-nav .nav-inner{
+					  display: none;
+					  -webkit-animation-duration: 1s;
+					  -moz-animation-duration: 1s;
+					  -o-animation-duration: 1s;
+					  animation-duration: 1s;
+					  -webkit-animation-fill-mode: both;
+					  -moz-animation-fill-mode: both;
+					  -o-animation-fill-mode: both;
+					  animation-fill-mode: both;
+					  vertical-align: middle;
+					  white-space: normal;
+					}
+					.sm-menu .sm-nav .nav-inner.animated{
+					  display: inline-block;
+					}
+					.sm-menu .sm-nav:nth-child(2) {
+						-webkit-transform: translate3d(-50%, 0, 0) scaleX(0.002);
+						-moz-transform: translate3d(-50%, 0, 0) scaleX(0.002);
+						-ms-transform: translate3d(-50%, 0, 0) scaleX(0.002);
+						-o-transform: translate3d(-50%, 0, 0) scaleX(0.002);
+						transform: translate3d(-50%, 0, 0) scaleX(0.002);
+						right: 0;
+					}
+					.sm-menu .sm-nav.animated, .sm-menu.sm-horizontal .sm-nav.animated  {
+					  -webkit-transform: scale(1, 1);
+					  -moz-transform: scale(1, 1);
+					  -ms-transform: scale(1, 1);
+					  -o-transform: scale(1, 1);
+					  transform: scale(1, 1);
+					  opacity: 1;
+					}
+					.sm-menu .sm-nav:after {
+					  content: "";
+					  position: relative;
+					  height: 100%;
+					  display: inline-block;
+					  vertical-align: middle;
+					  -webkit-box-sizing: border-box;
+					  -moz-box-sizing: border-box;
+					  box-sizing: border-box;
+					  display: inline-block;
+					}
+					.sm-menu .sm-close {
+					  position: absolute;
+					  top: 0;
+					  right: 0;
+					  z-index: 1000;
+					  padding: 10px;
+					  font-size: 30px;
+					  color: #333;
+					  font-weight: 100;
+					  line-height: 100%;
+					  text-decoration: none;
+					}
+					.sm-menu .sm-close:hover {
+					  color: #fff;
+					}
+					.sm-menu .sm-close.image {
+						background: url(assets/close.jpg);
+						background-size: 100%;
+						background-origin: content-box;
+						background-repeat: no-repeat;
+						width: 20px;
+						height: 20px;
+						text-overflow: clip;
+						text-indent: -9999px;
+						color: transparent;
+					}
+					.sm-menu .sm-nav .nav-inner > a{
+					  line-height: 1;
+					  font-weight: 300;
+					  display: block;
+					}
+					.sm-menu .sm-nav .nav-inner > a:hover{
+
+					}
+
+					.sm-overlay {
+						cursor: pointer;
+						height: 100%;
+						width: 100%;
+						background: #2E3B4E;
+						opacity: 0;
+						position: fixed;
+						left: 0;
+						right: 0;
+						top: 0;
+						z-index: 1000;
+						overflow: hidden;
+						visibility: hidden;
+						-webkit-transition: all 0.5s ease-in-out;
+						-moz-transition: all 0.5s ease-in-out;
+						-o-transition: all 0.5s ease-in-out;
+						transition: all 0.5s ease-in-out; 
+					}
+					.buttonstyle {
+						cursor: pointer;
+					}
+					body .sm-button {
+					  position: fixed;
+					  top: 20px;
+					  right: 20px;
+					  font-weight: bold;
+					  padding: 10px;
+					  font-size: 14px;
+					  z-index: 1002;
+					  background: #ddd;
+					  color: #333;
+					  border: 1px solid #333;
+					}
+
+					body .sm-button:hover {
+					  background: #777;
+					  color: #fff;
+					  border-color: #333;
+					}
+					body .sm-button.fixed-left{
+						left: 20px;
+						right: initial;
+					}
+					body .sm-button.relative{
+						position: initial;
+						display: table;
+					}
+					body.sm-activate .sm-overlay {
+					  opacity: 1;
+					  visibility: visible;
+					}
+
+					@-webkit-keyframes flyInLeft {
+					  0% {
+					    opacity: 0;
+					    -webkit-transform: translateX(-20px);
+					    transform: translateX(-20px);
+					  }
+
+					  100% {
+					    opacity: 1;
+					    -webkit-transform: translateX(0);
+					    transform: translateX(0);
+					  }
+					}
+					@keyframes flyInLeft {
+					  0% {
+					    opacity: 0;
+					    -webkit-transform: translateX(-20px);
+					    -ms-transform: translateX(-20px);
+					    transform: translateX(-20px);
+					  }
+
+					  100% {
+					    opacity: 1;
+					    -webkit-transform: translateX(0);
+					    -ms-transform: translateX(0);
+					    transform: translateX(0);
+					  }
+					}
+					@-webkit-keyframes flyInRight {
+					  0% {
+					    opacity: 0;
+					    -webkit-transform: translateX(20px);
+					    transform: translateX(20px);
+					  }
+
+					  100% {
+					    opacity: 1;
+					    -webkit-transform: translateX(0);
+					    transform: translateX(0);
+					  }
+					}
+					@keyframes flyInRight {
+					  0% {
+					    opacity: 0;
+					    -webkit-transform: translateX(20px);
+					    -ms-transform: translateX(20px);
+					    transform: translateX(20px);
+					  }
+
+					  100% {
+					    opacity: 1;
+					    -webkit-transform: translateX(0);
+					    -ms-transform: translateX(0);
+					    transform: translateX(0);
+					  }
+					}
+					.flyInRight {
+					  -webkit-animation-name: flyInRight;
+					  animation-name: flyInRight;
+					}
+					.flyInLeft {
+					  -webkit-animation-name: flyInLeft;
+					  animation-name: flyInLeft;
+					}
+				</style>
+				<style>
+					#u211 {
+						z-index: 1001;
+					}
+				</style>
+				<script>
+					var MT_navRightMenu, MT_navLeftMenu;
+				</script>
+		
+			<style>
+				.sm-menu .sm-nav {
+				  background: #85B4CC;
+				}
+				.sm-menu .sm-nav .nav-inner > a{
+				  font-size: 24px;
+				  margin-bottom: 15px;
+				  color: #fff;
+				  font-family: montserrat !important;
+				}
+				.sm-menu .sm-nav .nav-inner > a:hover{
+					color: #ddd;
+				}
+			</style>
+		
+			<style>
+				.sm-menu .sm-nav:nth-child(2) {
+					background: #7AAAC4;
+				}
+				.sm-menu .sm-nav:nth-child(2) .nav-inner > a{
+					font-size: 24px;
+					color: #fff;
+					margin-bottom: 15px;
+					font-family: montserrat !important;
+				}
+				.sm-menu .sm-nav:nth-child(2) .nav-inner > a:hover{
+					color: #ddd;
+				}
+			</style>
+		
+ </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- column -->
+   <div class="size_fixed colelem" id="u211"><!-- custom html -->
+    
+			<div class="MT_NavigationWidget">
+
+			</div>
+		
+   </div>
+   <div class="clearfix colelem" id="pu214"><!-- group -->
+    <div class="size_fixed grpelem" id="u214"><!-- custom html -->
+     
+		
+    </div>
+    <div class="size_fixed grpelem" id="u213"><!-- custom html -->
+     
+		
+    </div>
+   </div>
+   <div class="Button rounded-corners buttonstyle museBGSize colelem" id="buttonu212"><!-- container box --></div>
+   <div class="verticalspacer" data-offset-top="410" data-content-above-spacer="410" data-content-below-spacer="90"></div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="images/asset%203xxxhdpi.jpg?crc=52037488" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),i=0;i<f.length;i++)if("text/css"==f[i].type){var h=(f[i].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!h||!h[1]||!h[2])break;b[h[1]]=h[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(i=0;i<Muse.assets.required.length;){var h=Muse.assets.required[i],l=h.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(i,1),"undefined"!=typeof b[h]&&(k!=b[h]>>>24||l!=(b[h]&16777215))&&Muse.assets.outOfDate.push(h)):i++;f.className="version";break;case "js":k.match(/^jquery-[\d\.]+/gi)&&d&&d().jquery=="1.8.3"?Muse.assets.required.splice(i,1):i++;break;default:throw Error("Unsupported file type: "+
+l);}}f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4108833657" type="text/javascript" async data-main="scripts/museconfig.js?crc=169177150" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+			<script>
+				// Load Square Menu
+				
+				$(function(){
+					!function(e){var t={flyDirection:"bottom",button:"Menu",animationStyle:"vertical",closeButton:"X"};e.fn.square_menu=function(n){var r=e.extend({},t,n),i=e(this);e("body").addClass("fsm-body");i.addClass("sm-menu sm-"+r.flyDirection+" sm-"+r.animationStyle);i.wrapInner("<div class='sm-wrapper'></div>");i.find("nav").addClass("sm-nav").wrapInner("<div class='nav-inner'></div>");e.fn.closeMenu=function(){e(".sm-menu").addClass("animated").removeClass("re-rotate");e(".sm-menu .sm-close").remove();e(".sm-menu .sm-nav:first-child .nav-inner").removeClass("animated flyInLeft");e(".sm-menu .sm-nav:nth-child(2) .nav-inner").removeClass("animated flyInRight");if(e("body").hasClass("sm-activate")){e(".sm-menu").find(".sm-nav").removeClass("animated");e(".sm-menu").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){e("body").removeClass("sm-activate").find(".sm-menu").removeClass("ff-hack")})}};e.fn.openMenu=function(){e(".sm-menu").addClass("animated").addClass("ff-hack");if(!e("body").hasClass("sm-activate")){if(e(".sm-overlay").length<1)e("<div class='sm-overlay'></div>").hide().prependTo("body");e(".sm-overlay").fadeIn("fast",function(){e("body").addClass("sm-activate");var t=false;e("body").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(n){if(!t){t=true;e(".sm-menu .sm-nav").addClass("animated");e(".sm-menu .sm-nav").one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(t){if(t.originalEvent.propertyName=="-webkit-transform"||t.originalEvent.propertyName=="transform"||t.originalEvent.propertyName=="-o-transform"||t.originalEvent.propertyName=="-moz-transform"){e(".sm-menu").addClass("re-rotate");if(r.closeButton!=false){i.prepend("<a href='#' class='sm-close true'>"+r.closeButton+"</a>");e(".sm-close").click(function(){i.closeMenu();return false})}e(".sm-menu .sm-nav:first-child .nav-inner").addClass("animated flyInLeft");e(".sm-menu .sm-nav:nth-child(2) .nav-inner").addClass("animated flyInRight");e(".sm-overlay:not(.clicked)").addClass("clicked").click(function(){i.closeMenu()})}})}})})}else{i.closeMenu()}};if(r.button!=false){e("<a href='#' class='sm-button relative'>"+r.button+"</a>").insertAfter(i)}e(".sm-button").click(function(){i.openMenu();return false})}}(window.jQuery)
+				});
+			</script>
+			<script>
+				$(function(){
+					// Create menus
+					if (!MT_navRightMenu) MT_navRightMenu = [];
+					if (!MT_navLeftMenu) MT_navLeftMenu = [];
+					var logo = "left";
+
+					var leftMenu = $('<nav class="left" />');
+					if (logo == "left") $(leftMenu).append('<img src="assets/seeder.png"/>');
+					$(MT_navLeftMenu).each(function(){
+						$(leftMenu).append('<a href="'+this.url+'">'+this.label+'</a>')
+					});
+					$('#u211 .MT_NavigationWidget').append(leftMenu);
+
+					var rightMenu = $('<nav class="right" />');
+					if (logo == "right") $(rightMenu).append('<img src="assets/seeder.png"/>');
+					$(MT_navRightMenu).each(function(){
+						$(rightMenu).append('<a href="'+this.url+'">'+this.label+'</a>')
+					});
+					$('#u211 .MT_NavigationWidget').append(rightMenu);
+
+					var buttonText = false ? "Menu" : false;
+					var closeText = "true" == "true" ? "X" : "x";
+					$('#u211 .MT_NavigationWidget').square_menu({
+						flyDirection: "bottom",
+						button: buttonText,
+						animationStyle: "vertical",
+						closeButton: closeText
+					});
+					if (!false){
+						$('.buttonstyle').click(function(){
+							$('#u211 .MT_NavigationWidget').openMenu();
+						});
+					}
+				});
+
+				$(document).on("contextmenu", "body", function(e){
+				   //alert('Widget designed by MuseThemes http://www.muse-themes.com');
+				   //e.preventDefault();
+				});
+			</script>
+		
+			<script>
+				if (!MT_navLeftMenu) MT_navLeftMenu = [];
+				var originalCount = MT_navLeftMenu.length;
+				MT_navLeftMenu.push({label: "Mindfulness with John Kabat-Zinn, PhD", url: "./ZinnMindfulness.html"});
+				MT_navLeftMenu.push({label: "Body Scan", url: "./BodyScan.html"});
+				MT_navLeftMenu.push({label: "Mindfulness Introduction with John Kabat-Zinn, PhD", url: "./MindfulnessIntroduction.html"});
+				MT_navLeftMenu.push({label: "How Mindfulness Empowers Us by Sharon Salzberg", url: "./HowMindfulnessEmpowersUs.html"});
+				MT_navLeftMenu.push({label: "Meditation for Beginners by Sharon Salzberg", url: "./MeditationForBeginners.html"});
+				MT_navLeftMenu.push({label: "Label 6", url: "http://"});
+				MT_navLeftMenu.push({label: "Label 7", url: "http://"});
+				MT_navLeftMenu.push({label: "Label 8", url: "http://"});
+				MT_navLeftMenu.push({label: "Label 9", url: "http://"});
+				MT_navLeftMenu.push({label: "Label 10", url: "http://"});
+				MT_navLeftMenu = MT_navLeftMenu.splice(0,originalCount+5);
+			</script>
+		
+			<script>
+				if (!MT_navRightMenu) MT_navRightMenu = [];
+				var originalCount = MT_navRightMenu.length;
+				MT_navRightMenu.push({label: "Why Mindfulness is Super Power", url: "./WhyMindfulnessIsSuperPower.html"});
+				MT_navRightMenu.push({label: "Mindfulness and How the Brain Works", url: "./MindfulnessAndHowTheBrainWorks.html"});
+				MT_navRightMenu.push({label: "All It takes is Ten Mindful Minutes", url: "./AllItTakesIsTenMindfulMinutes.html"});
+				MT_navRightMenu.push({label: "Sitting Meditation by John Kabat-Zinn, PhD", url: "SittingMeditation.html"});
+				MT_navRightMenu.push({label: "Breathing Space by John Kabat-Zinn, PhD", url: "BreathingSpace.html"});
+				MT_navRightMenu.push({label: "Nakai, Earth Spirit Native American Music", url: "Nakai.html"});
+				MT_navRightMenu.push({label: "Indian Flute Music", url: "IndianFluteMusic.html"});
+				MT_navRightMenu.push({label: "Worksheet for Workbook", url: "Worksheet.html"});
+				MT_navRightMenu.push({label: "Label 9", url: "http://"});
+				MT_navRightMenu.push({label: "Label 10", url: "http://"});
+				MT_navRightMenu.push({label: "{param_right_menu_lbl_11}", url: "{param_right_menu_url_11}"});
+				MT_navRightMenu.push({label: "{param_right_menu_lbl_12}", url: "{param_right_menu_url_12}"});
+				MT_navRightMenu.push({label: "{param_right_menu_lbl_13}", url: "{param_right_menu_url_13}"});
+				MT_navRightMenu.push({label: "{param_right_menu_lbl_14}", url: "{param_right_menu_url_14}"});
+				MT_navRightMenu.push({label: "{param_right_menu_lbl_15}", url: "{param_right_menu_url_15}"});
+				MT_navRightMenu = MT_navRightMenu.splice(0,originalCount+8);
+
+			</script>
+		
+   </body>
+</html>
